@@ -1,12 +1,11 @@
-const { withContentlayer } = require('next-contentlayer2')
-
-import { setupDevPlatform } from '@cloudflare/next-on-pages/next-dev'
-
 // note: the if statement is present because you
 //       only need to use the function during development
-if (process.env.NODE_ENV === 'development') {
-  await setupDevPlatform()
+if (process.env.NODE_ENV === "development") {
+  const { setupDevPlatform } = require("@cloudflare/next-on-pages/next-dev")
+  setupDevPlatform()
 }
+
+const { withContentlayer } = require('next-contentlayer2')
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
