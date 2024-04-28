@@ -14,20 +14,20 @@ import type { LocaleTypes } from 'app/[locale]/i18n/settings'
 
 const Header = () => {
   const locale = useParams()?.locale as LocaleTypes
-  const { t } = useTranslation(locale, '')
+  const { t } = useTranslation(locale, 'projects')
   // Get current page path
   const pathname = usePathname()
 
   return (
     <header>
-      <div className="flex items-center justify-between py-10">
+      <div className="flex items-center justify-between py-6">
         <div>
-          <Link href={`/${locale}/`} aria-label={siteMetadata.headerTitle}>
+          <Link href={`/${locale}/`} aria-label={t('seoMeta.headerTitle')}>
             <div className="flex items-center justify-between">
-              <div className="mr-3">
+              <div className="mr-3 h-16 w-16">
                 <Logo />
               </div>
-              {typeof siteMetadata.headerTitle === 'string' ? (
+              {typeof t('seoMeta.headerTitle') === 'string' ? (
                 <div className="hidden h-6 text-2xl font-semibold sm:block">
                   {siteMetadata.headerTitle}
                 </div>

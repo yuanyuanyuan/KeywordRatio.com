@@ -1,22 +1,21 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js i18n Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js, i18n and Tailwind.css',
+  author: 'PeterChenYuan',
+  headerTitle: 'Keyword Ratio Tools',
   language: 'en',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog-i18n.vercel.app',
-  siteRepo: 'https://github.com/PxlSyl/tailwind-nextjs-starter-blog-i18n',
+  siteUrl: 'https://KeywordRatio.com',
+  siteName: 'KeywordRatio.com',
+  siteRepo: '',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
-  mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  mastodon: '',
+  email: 'support@keywordratio.com',
+  github: 'https://github.com/yuanyuanyuan',
+  twitter: 'https://twitter.com/Peter_Yuan_AI',
+  facebook: '',
+  youtube: '',
+  linkedin: '',
   locale: 'en',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
@@ -37,11 +36,11 @@ const siteMetadata = {
     //   googleAnalyticsId: '', // e.g. G-XXXXXXX
     // },
   },
-  newsletter: {
-    // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
-    // Please add your .env file and modify it according to your selection
-    provider: 'buttondown',
-  },
+  // newsletter: {
+  //   // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
+  //   // Please add your .env file and modify it according to your selection
+  //   provider: 'buttondown',
+  // },
   iscomments: false,
   comments: {
     // If you want to use an analytics provider you have to add it to the
@@ -73,24 +72,24 @@ const siteMetadata = {
       lang: 'en',
     },
   },
-  search: {
-    provider: 'kbar', // kbar or algolia
-    kbarConfig: {
-      searchDocumentsPath: 'search.json', // path to load documents to search
-    },
-    // provider: 'algolia',
-    // algoliaConfig: {
-    //   // The application ID provided by Algolia
-    //   appId: 'R2IYF7ETH7',
-    //   // Public API key: it is safe to commit it
-    //   apiKey: '599cec31baffa4868cae4e79f180729b',
-    //   indexName: 'docsearch',
-    // },
-  },
+  // search: {
+  //   provider: 'kbar', // kbar or algolia
+  //   kbarConfig: {
+  //     searchDocumentsPath: 'search.json', // path to load documents to search
+  //   },
+  //   // provider: 'algolia',
+  //   // algoliaConfig: {
+  //   //   // The application ID provided by Algolia
+  //   //   appId: 'R2IYF7ETH7',
+  //   //   // Public API key: it is safe to commit it
+  //   //   apiKey: '599cec31baffa4868cae4e79f180729b',
+  //   //   indexName: 'docsearch',
+  //   // },
+  // },
   // formspree support :
   //if set to false, simple "mailto"
   // if set to true, get a free account there : https://formspree.io/ and go to read.me doc
-  formspree: true,
+  formspree: false,
   // waline support
   iswaline: false,
   walineServer: '',

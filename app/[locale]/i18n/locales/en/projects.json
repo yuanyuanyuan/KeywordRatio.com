@@ -1,8 +1,48 @@
 {
-  "title": "Projects",
-  "description": "Showcase your projects with a hero image (16 x 9)",
-  "read": "Read more",
-  "visit": "Visit project",
-  "subtitle": "Here you will find information about my current projects",
-  "linkto": "Link to"
+  "seoMeta": {
+    "title": "Master SEO with KEDR & KGRoi | Keyword Ratio Analysis",
+    "description": "Optimize your SEO strategy with advanced KEDR and KGRoi insights. Start analyzing now and gain a competitive edge with KeywordRatio.com.",
+    "keywords": "KEDR, KGRoi, keyword analysis, SEO strategy, search engine optimization",
+    "headerTitle": "Keyword Ratio Tools"
+  },
+  "navHeader": {
+    "headerTitle": ""
+  },
+  "hero": {
+    "h1": "Master Your SEO with Advanced Keyword Ratio Analysis",
+    "h2": "Dive deep into keyword efficiencies with KEDR and KGRoi insights.",
+    "button": "Start Analyzing Now – Gain the Competitive Edge!"
+  },
+  "feature": {
+    "h2": "Key Features",
+    "h3-1": "Keyword Ratio Insights",
+    "h3-1-p1": "Understand the balance between search volume and competition with our Keyword Ratio analysis, helping you pick the most effective keywords for your campaigns.",
+    "h3-1-p2": "Strategically enhance your content's visibility and search engine ranking.",
+    "h3-2": "KEDR (Keyword Efficiency and Difficulty Ratio)",
+    "h3-2-p1": "Evaluate the competitive landscape with KEDR, which provides a profitability score based on keyword difficulty and potential returns.",
+    "h3-2-p2": "Prioritize high-return keywords to maximize your SEO investment.",
+    "h3-3": "KGRoi (Keyword Golden Ratio)",
+    "h3-3-p1": "Identify underutilized keywords with our KGRoi, highlighting opportunities where demand exceeds supply.",
+    "h3-3-p2": "Capture niche markets and achieve quicker ranking improvements."
+  },
+  "howTo": {
+    "h2": "How to Use Our Tool",
+    "h3": "Step-by-Step User Guide",
+    "h3-p": "Maximize your keyword potential with KeywordRatio.com. Follow these steps to utilize the power of Keyword Ratio, KEDR, and KGRoi in your SEO strategy.",
+    "h3-1": "Select Your Excel",
+    "h3-1-p": "Input your target keywords into our search tool.",
+    "h3-2": "Upload Your Excel",
+    "h3-2-p": "Analyze the results focusing on Keyword Ratio, KEDR, and KGRoi to identify the most strategic opportunities.",
+    "h3-3": "Filter it",
+    "h3-3-p": "Implement the insights to optimize your content and SEO campaigns."
+  },
+  "faqs": {
+    "h2": "Frequently Asked",
+    "h3-1": "How does Keyword Ratio affect my SEO strategy?",
+    "h3-1-p1": "Keyword Ratio helps you understand the balance of search volume against competition, crucial for optimizing your content's SEO efficiency.",
+    "h3-2": "What is KEDR and how can it benefit me?",
+    "h3-2-p1": "KEDR stands for Keyword Difficulty Return on Investment. It measures the potential profitability of a keyword, helping you focus on the most effective areas for your SEO efforts.",
+    "h3-3": "Why should I focus on KGRoi?",
+    "h3-3-p1": "KGRoi identifies low-competition keywords that are often overlooked but can lead to quick ranking improvements and more effective targeting."
+  }
 }

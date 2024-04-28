@@ -14,6 +14,7 @@ import { Metadata } from 'next'
 import { dir } from 'i18next'
 import { LocaleTypes, locales } from './i18n/settings'
 import TwSizeIndicator from '@/components/helper/TwSizeIndicator'
+import CookieConsent from '@/components/KeywordRoiCalculator/CookieConsent'
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -43,10 +44,13 @@ export async function generateMetadata({ params: { locale } }): Promise<Metadata
       type: 'website',
     },
     alternates: {
-      canonical: './',
-      types: {
-        'application/rss+xml': `${siteMetadata.siteUrl}/feed.xml`,
+      canonical: siteMetadata.siteUrl,
+      languages: {
+        en: siteMetadata.siteUrl,
       },
+      // types: {
+      //   'application/rss+xml': `${siteMetadata.siteUrl}/feed.xml`,
+      // },
     },
     robots: {
       index: true,
@@ -89,7 +93,7 @@ export default function RootLayout({
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
-      <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+      {/*<link rel="alternate" type="application/rss+xml" href="/feed.xml" />*/}
       <body className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
         <TwSizeIndicator />
         <ThemeProviders>
@@ -100,10 +104,11 @@ export default function RootLayout({
                 <Header />
                 <main className="mb-auto">{children}</main>
               </SearchProvider>
-              <Footer />
+              <Footer locale={locale} />
             </div>
           </SectionContainer>
         </ThemeProviders>
+        <CookieConsent />
       </body>
     </html>
   )

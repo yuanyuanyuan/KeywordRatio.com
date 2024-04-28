@@ -3,11 +3,11 @@ type Metadata = {
 }
 
 export const maintitle: Metadata = {
-  en: 'Next.js i18n Starter Blog',
-  fr: 'Starter Blog Next.js i18n',
+  en: 'Master SEO with KEDR & KGRoi | Keyword Ratio Analysis',
+  zh: 'Master SEO with KEDR & KGRoi | Keyword Ratio Analysis',
 }
 
 export const maindescription: Metadata = {
-  en: 'A blog created with Next.js, i18n and Tailwind.css',
-  fr: 'Un blog crée avec tailwind, i18n et next.js',
+  en: 'Optimize your SEO strategy with advanced KEDR and KGRoi insights. Start analyzing now and gain a competitive edge with KeywordRatio.com.',
+  zh: 'Optimize your SEO strategy with advanced KEDR and KGRoi insights. Start analyzing now and gain a competitive edge with KeywordRatio.com.',
 }

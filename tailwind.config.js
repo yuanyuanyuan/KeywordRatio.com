@@ -27,6 +27,8 @@ module.exports = {
       colors: {
         primary: colors.pink,
         gray: colors.gray,
+        orangeHover: '#FFA500',
+        orange: '#FFA500',
       },
       typography: ({ theme }) => ({
         DEFAULT: {
@@ -65,6 +67,9 @@ module.exports = {
           },
         },
       }),
+      boxShadow: {
+        'button-primary': '0 4px 6px rgba(0, 0, 0, 0.1)', // Example shadow
+      },
     },
   },
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
