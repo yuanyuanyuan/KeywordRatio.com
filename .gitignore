@@ -48,7 +48,6 @@ yarn-error.log*
 # Contentlayer
 .contentlayer
 
-!/.env.production
 
 .idea
 .vscode
