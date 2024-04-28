@@ -1,7 +1,7 @@
 // note: the if statement is present because you
 //       only need to use the function during development
-if (process.env.NODE_ENV === "development") {
-  const { setupDevPlatform } = require("@cloudflare/next-on-pages/next-dev")
+if (process.env.NODE_ENV === 'development') {
+  const { setupDevPlatform } = require('@cloudflare/next-on-pages/next-dev')
   setupDevPlatform()
 }
 
@@ -73,8 +73,9 @@ module.exports = () => {
       dirs: ['app', 'components', 'layouts', 'scripts'],
     },
     images: {
-      domains: ['', 'localhost', 'tailwind-nextjs-starter-blog-i18n.vercel.app/', 'picsum.photos'],
+      domains: ['', 'localhost', 'keywordratio.com', 'picsum.photos'],
     },
+    // compress: true,
     async headers() {
       return [
         {
