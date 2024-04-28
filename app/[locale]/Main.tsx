@@ -25,7 +25,7 @@ interface HomeProps {
   posts: Post[]
   params: { locale: LocaleTypes }
 }
-
+export const runtime = 'edge'
 const MAX_DISPLAY = 5
 
 export default async function Home({ posts, params: { locale } }: HomeProps) {

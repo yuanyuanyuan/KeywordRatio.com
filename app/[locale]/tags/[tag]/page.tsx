@@ -14,7 +14,7 @@ import { allBlogs } from 'contentlayer/generated'
 type TagsProps = {
   params: { tag: string; locale: LocaleTypes }
 }
-
+export const runtime = 'edge'
 export async function generateMetadata({ params: { tag, locale } }: TagsProps): Promise<Metadata> {
   const dtag = decodeURI(tag)
   const capitalizedDtag = capitalizeFirstLetter(dtag)

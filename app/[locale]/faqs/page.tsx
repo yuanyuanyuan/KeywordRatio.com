@@ -10,7 +10,7 @@ import { LocaleTypes } from '../i18n/settings'
 type AboutProps = {
   params: { locale: LocaleTypes }
 }
-
+export const runtime = 'edge'
 // export async function generateMetadata({ params: { locale } }: AboutProps): Promise<Metadata> {
 // const { t } = await createTranslation(locale, 'about')
 // return genPageMetadata({

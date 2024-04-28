@@ -10,7 +10,7 @@ import { slug } from 'github-slugger'
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer'
 import ListLayout from '@/layouts/ListLayoutWithTags'
 import { allBlogs } from 'contentlayer/generated'
-
+export const runtime = 'edge'
 type TagsProps = {
   params: { tag: string; locale: LocaleTypes; page: string }
 }

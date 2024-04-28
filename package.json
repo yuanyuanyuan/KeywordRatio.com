@@ -58,6 +58,7 @@
     "zustand": "^4.5.0"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.11.1",
     "@svgr/webpack": "^8.1.0",
     "@types/file-saver": "^2",
     "@types/mdx": "^2.0.12",

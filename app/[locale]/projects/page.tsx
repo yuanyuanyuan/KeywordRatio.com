@@ -4,7 +4,7 @@ import { genPageMetadata } from 'app/[locale]/seo'
 import { createTranslation } from '../i18n/server'
 import { LocaleTypes } from '../i18n/settings'
 import Hero from '@/components/KeywordRoiCalculator/Hero'
-
+export const runtime = 'edge'
 type ProjectsProps = {
   params: { locale: LocaleTypes }
 }

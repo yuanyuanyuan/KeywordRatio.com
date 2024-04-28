@@ -6,7 +6,7 @@ import { allBlogs } from 'contentlayer/generated'
 import { genPageMetadata } from 'app/[locale]/seo'
 import { createTranslation } from '../i18n/server'
 import { LocaleTypes } from '../i18n/settings'
-
+export const runtime = 'edge'
 type BlogPageProps = {
   params: { locale: LocaleTypes }
 }

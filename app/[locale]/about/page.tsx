@@ -7,6 +7,8 @@ import { genPageMetadata } from 'app/[locale]/seo'
 import { createTranslation } from '../i18n/server'
 import { LocaleTypes } from '../i18n/settings'
 
+export const runtime = 'edge'
+
 type AboutProps = {
   params: { locale: LocaleTypes }
 }

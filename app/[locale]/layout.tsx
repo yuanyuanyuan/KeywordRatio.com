@@ -70,7 +70,7 @@ export async function generateMetadata({ params: { locale } }): Promise<Metadata
     },
   }
 }
-
+export const runtime = 'edge'
 export default function RootLayout({
   children,
   params: { locale },

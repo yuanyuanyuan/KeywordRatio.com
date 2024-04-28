@@ -17,7 +17,7 @@ import { LocaleTypes } from 'app/[locale]/i18n/settings'
 interface BlogPageProps {
   params: { slug: string[]; locale: LocaleTypes }
 }
-
+export const runtime = 'edge'
 const defaultLayout = 'PostLayout'
 const layouts = {
   PostSimple,

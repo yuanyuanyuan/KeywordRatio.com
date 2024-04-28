@@ -4,7 +4,7 @@ import Card from '@/components/Card'
 import { LocaleTypes } from '../i18n/settings'
 import { useParams } from 'next/navigation'
 import KeywordRoiCalculator from '@/components/KeywordRoiCalculator'
-
+export const runtime = 'edge'
 const Project = () => {
   // const locale = useParams()?.locale as LocaleTypes
   // const projectLocalData = projectsData[locale]
