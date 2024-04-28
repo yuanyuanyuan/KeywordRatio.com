@@ -11,6 +11,7 @@ import LangSwitch from './LangSwitch'
 import SearchButton from './search/SearchButton'
 import { useTranslation } from 'app/[locale]/i18n/client'
 import type { LocaleTypes } from 'app/[locale]/i18n/settings'
+import BuyMeACoffee from '@/components/KeywordRoiCalculator/buymeaCoffee'
 
 const Header = () => {
   const locale = useParams()?.locale as LocaleTypes
@@ -38,6 +39,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
+          <BuyMeACoffee></BuyMeACoffee>
           {headerNavLinks
             .filter((link) => link.href !== '/')
             .map((link) => {
