@@ -26,6 +26,7 @@ const KdFilterButton = ({
             <span className="mr-2">
               KD: {values[0]}-{values[1]}%
             </span>
+            {/* eslint-disable-next-line  */}
             <img
               src="/icons/close.svg"
               width="14"
@@ -46,7 +47,7 @@ const KdFilterButton = ({
       {visible && (
         <div className="absolute left-0 top-full z-20 mt-2 w-full rounded-lg bg-gray-400 py-2 text-white shadow-lg">
           {selections.map((item, index) => (
-            // eslint-disable-next-line jsx-a11y/click-events-have-key-events
+            // eslint-disable-next-line
             <div
               key={index}
               className="flex-center cursor-pointer px-4 py-2"

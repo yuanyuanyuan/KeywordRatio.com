@@ -41,7 +41,7 @@ const FileInputUpload: React.FC<FileUploadProps> = ({ onFileUpload }) => {
   }
 
   return (
-    <div className="space-y-4 mt-2">
+    <div className="mt-2 space-y-4">
       <div className="max-w-sm">
         <form>
           <label className="block">

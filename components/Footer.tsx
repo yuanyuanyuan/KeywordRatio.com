@@ -15,8 +15,9 @@ import { createTranslation } from '../app/[locale]/i18n/server'
 import Logo from '@/data/logo.svg'
 import { slug } from 'github-slugger'
 
-export default async function Footer({ locale }) {
+export default async function Footer({ locale = 'en' }) {
   // const locale = useParams()?.locale as LocaleTypes
+  // @ts-ignore
   const { t } = await createTranslation(locale, 'footer')
   // const { t } = useTranslation(locale, 'footer')
   // const contactModal = useContactModal()
@@ -137,6 +138,7 @@ export default async function Footer({ locale }) {
               </div>
               <div className="flex flex-col">
                 Email:
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a href="#">{siteMetadata['email']}</a>
               </div>
             </div>

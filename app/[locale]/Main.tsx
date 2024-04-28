@@ -154,11 +154,11 @@ export default async function Home({ posts, params: { locale } }: HomeProps) {
       {/*    </Link>*/}
       {/*  </div>*/}
       {/*)}*/}
-      {siteMetadata.newsletter?.provider && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
-      )}
+      {/*{siteMetadata.newsletter?.provider && (*/}
+      {/*  <div className="flex items-center justify-center pt-4">*/}
+      {/*    <NewsletterForm />*/}
+      {/*  </div>*/}
+      {/*)}*/}
     </>
   )
 }

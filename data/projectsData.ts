@@ -29,7 +29,7 @@ const projectsData: ProjectsData = {
     },
   ],
 
-  fr: [
+  zh: [
     {
       title: 'Un moteur de recherche',
       description: `Et si vous pouviez rechercher n'importe quelle information dans le monde ? Pages Web, images, vidéos
