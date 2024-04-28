@@ -88,7 +88,9 @@ module.exports = () => {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
       })
-
+      config.resolve.fallback = {
+        querystring: require.resolve('querystring'),
+      }
       return config
     },
   })
