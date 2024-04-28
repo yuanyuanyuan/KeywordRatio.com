@@ -1,9 +1,16 @@
 'use client'
-
+import dynamic from 'next/dynamic'
 import React, { useEffect, useState } from 'react'
 import FileInputUpload from './FileInputUpload'
 import BaseTable from './BaseTable'
 import Link from '@/components/Link' // Assuming you have this component
+
+const DynamicFileInputUpload = dynamic(() => import('./FileInputUpload'), {
+  loading: () => <p>Loading...</p>,
+})
+const DynamicBaseTable = dynamic(() => import('./BaseTable'), {
+  loading: () => <p>Loading...</p>,
+})
 
 const KeywordRoiCalculator = () => {
   const mockData = [
@@ -88,11 +95,12 @@ const KeywordRoiCalculator = () => {
   }
 
   console.log('jsonData', jsonData)
+
   return (
     <div id="main" className="font-rubik flex h-full min-h-screen w-full flex-col">
       <main className="flex-grow">
         <div className="flex justify-between">
-          <FileInputUpload onFileUpload={handleFileUpload} />
+          <DynamicFileInputUpload onFileUpload={handleFileUpload} />
           <button
             type="button"
             className="text-md border-medium-blue button-primary z-10 mt-3 inline-flex   space-x-2 rounded-lg bg-blue-900 px-4  py-2 text-center font-medium tracking-wide  text-white hover:animate-none focus:animate-none"
@@ -106,7 +114,7 @@ const KeywordRoiCalculator = () => {
           </button>
         </div>
 
-        {jsonData && <BaseTable data={jsonData} />}
+        {jsonData && <DynamicBaseTable data={jsonData} />}
       </main>
     </div>
   )
