@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from '@/components/Link'
 
 const Feature = ({ data }) => {
   return (
@@ -66,7 +67,10 @@ const Feature = ({ data }) => {
                     ></path>
                   </svg>
                 </div>
-                <h3>{data['h3-3']}</h3>
+
+                <Link href={data['link1']} className="">
+                  <h3>{data['h3-3']}</h3>
+                </Link>
               </dt>
               <dd className="mt-2 text-base leading-7 text-gray-600 dark:text-gray-400">
                 {data['h3-3-p1']}

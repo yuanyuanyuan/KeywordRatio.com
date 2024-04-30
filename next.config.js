@@ -73,7 +73,7 @@ module.exports = () => {
       dirs: ['app', 'components', 'layouts', 'scripts'],
     },
     images: {
-      domains: ['', 'localhost', 'keywordratio.com', 'picsum.photos'],
+      domains: ['', 'localhost', 'keywordratio.com', 'picsum.photos', 'mangools.com'],
     },
     // compress: true,
     async headers() {

@@ -124,9 +124,9 @@ export default async function PostLayout({
                 id="comment"
               >
                 {siteMetadata.iswaline === true && <WalineComments />}
-                {siteMetadata.comments && siteMetadata.iscomments === true && (
-                  <Comments slug={slug} />
-                )}
+                {/*{siteMetadata.comments && siteMetadata.iscomments === true && (*/}
+                {/*  <Comments slug={slug} />*/}
+                {/*)}*/}
               </div>
             </div>
             <footer>

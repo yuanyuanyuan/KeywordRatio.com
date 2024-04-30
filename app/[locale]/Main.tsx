@@ -47,6 +47,7 @@ export default async function Home({ posts, params: { locale } }: HomeProps) {
     'h3-3': t('feature.h3-3'),
     'h3-3-p1': t('feature.h3-3-p1'),
     'h3-3-p2': t('feature.h3-3-p2'),
+    link1: t('links.link1'),
   }
   const howToGuideData = {
     h2: t('howTo.h2'),
@@ -67,6 +68,7 @@ export default async function Home({ posts, params: { locale } }: HomeProps) {
     'h3-2-p1': t('faqs.h3-2-p1'),
     'h3-3': t('faqs.h3-3'),
     'h3-3-p1': t('faqs.h3-3-p1'),
+    link1: t('links.link1'),
   }
 
   return (
